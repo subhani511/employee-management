@@ -1,0 +1,239 @@
+/* src/style.css - global visual system for bold UI */
+:root {
+  --bg: #0f1724; /* deep background */
+  --card: #0b1220; /* card bg */
+  --muted: #94a3b8;
+  --text: #e6eef8;
+  --accent: #00b4d8; /* strong cyan accent */
+  --accent-dark: #0096b6;
+  --danger: #ff5c6c;
+  --glass: rgba(255, 255, 255, 0.04);
+  --radius: 12px;
+  --gap: 16px;
+  --shadow: 0 6px 20px rgba(2, 6, 23, 0.6);
+  --input-height: 44px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#app {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #071022 0%, #071826 100%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 28px;
+}
+
+/* container */
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* header */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand .logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  box-shadow: 0 6px 18px rgba(0, 180, 216, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #021428;
+  font-size: 20px;
+}
+.app-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+.app-sub {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* layout */
+.columns {
+  display: flex;
+  gap: var(--gap);
+}
+.col-left {
+  flex: 1;
+  min-width: 0;
+}
+.col-right {
+  width: 420px;
+}
+
+/* employee list: cards */
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.employee-card {
+  background: linear-gradient(180deg, var(--card), rgba(11, 18, 32, 0.8));
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(2, 6, 23, 0.75);
+}
+.employee-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-width: 0;
+}
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #021428;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.employee-info {
+  min-width: 0;
+}
+.employee-name {
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.employee-detail {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* action buttons */
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+.btn-primary {
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+  color: #021428;
+  box-shadow: 0 8px 20px rgba(0, 180, 216, 0.12);
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--text);
+}
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+
+/* form card */
+.form-card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.form-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.input,
+select {
+  width: 100%;
+  height: var(--input-height);
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: var(--glass);
+  color: var(--text);
+  font-weight: 600;
+  outline: none;
+}
+.input:focus,
+select:focus {
+  box-shadow: 0 6px 18px rgba(0, 180, 216, 0.06);
+  border-color: rgba(0, 180, 216, 0.18);
+}
+
+/* headings */
+.h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+.h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: var(--muted);
+}
+
+/* small helper */
+.small-muted {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* responsive */
+@media (max-width: 880px) {
+  .columns {
+    flex-direction: column;
+  }
+  .col-right {
+    width: 100%;
+  }
+}

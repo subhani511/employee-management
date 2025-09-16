@@ -1,0 +1,46 @@
+[
+  {
+    "Id": "1936b0b7-de5c-4e22-a737-9d85b744046b",
+    "Type": "FullTime",
+    "FirstName": "Subhani Basha",
+    "LastName": "Shaik",
+    "Email": "subhani112@example.com",
+    "DateOfHire": "2025-09-08T00:00:00",
+    "AnnualSalary": 4,
+    "HourlyRate": null,
+    "HoursPerMonth": null
+  },
+  {
+    "Id": "c202aa2f-6cfb-470a-9803-2a2937724275",
+    "Type": "FullTime",
+    "FirstName": "Tony",
+    "LastName": "Stark",
+    "Email": "tonystark123@gmail.com",
+    "DateOfHire": "2025-01-15T00:00:00",
+    "AnnualSalary": 7,
+    "HourlyRate": null,
+    "HoursPerMonth": null
+  },
+  {
+    "Id": "ce53fbdc-0554-475a-842a-09b98e7a1740",
+    "Type": "FullTime",
+    "FirstName": "Steve",
+    "LastName": "Roggers",
+    "Email": "steveroggesrs123@gmail.com",
+    "DateOfHire": "2025-09-13T00:00:00",
+    "AnnualSalary": 10,
+    "HourlyRate": null,
+    "HoursPerMonth": null
+  },
+  {
+    "Id": "6e0c5860-236c-4cc8-a0c2-6aa0ad68e83a",
+    "Type": "FullTime",
+    "FirstName": "Bruce",
+    "LastName": "Banner",
+    "Email": "bruce123@gmail.com",
+    "DateOfHire": "2025-09-02T00:00:00",
+    "AnnualSalary": 12,
+    "HourlyRate": null,
+    "HoursPerMonth": null
+  }
+]

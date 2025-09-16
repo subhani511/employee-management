@@ -1,0 +1,24 @@
+# .NET
+bin/
+obj/
+*.db
+
+# VS/JetBrains/VSCode
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Frontend
+employee-ui/node_modules/
+employee-ui/dist/
+employee-ui/.vite/
+employee-ui/.DS_Store
+
+# Env files (local settings)
+*.env
