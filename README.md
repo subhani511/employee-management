@@ -1,6 +1,6 @@
 # Employee Management System (Mini Project)
 
-A full-stack mini project built with **.NET 7/8 (C#)** and **Vue 3 + TypeScript**.
+A full-stack mini project built with **.NET 8 (C#)** and **Vue 3 + TypeScript**.
 
 ## Features
 
